@@ -1,6 +1,5 @@
 <template>
   <div class="article-detail">
-    <Header />
     <div class="container">
       <h1>{{ article.title }}</h1>
       <div class="article-meta">
