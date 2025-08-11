@@ -49,7 +49,6 @@ module.exports = {
     transpile: ['marked']
   },
   axios: {
-    // 配置你的 baseURL，确保静态生成时能正确拉取 markdown 文件
-    baseURL: 'http://localhost:3000' // 根据你的开发环境调整
+    baseURL: process.env.BASE_URL || '/'  // 线上没配置 BASE_URL 就默认 '/'
   }
 }
