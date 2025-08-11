@@ -6,7 +6,7 @@
     <!-- 英雄区域 -->
     <section class="hero">
       <div class="container">
-        <h1>我的个人知识库</h1>
+        <h1>我的个人知识库1</h1>
         <p>整理、存储和分享你的知识财富</p>
         <div class="search-box">
           <input type="text" placeholder="搜索知识..." v-model="searchQuery">
