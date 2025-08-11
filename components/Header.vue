@@ -7,8 +7,8 @@
       <nav class="nav">
         <ul>
           <li><a href="/">首页</a></li>
-          <li><a href="/categories">分类</a></li>
-          <li><a href="/about">关于</a></li>
+          <!-- <li><a href="/categories">分类</a></li>
+          <li><a href="/about">关于</a></li> -->
         </ul>
       </nav>
     </div>
