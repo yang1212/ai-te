@@ -16,7 +16,7 @@
       </aside>
 
       <div class="content">
-        <h1>前端｜{{ currentTypeText }}</h1>
+        <h1>前端｜语言</h1>
         <div class="top-bar">
           <button
             v-for="type in types"
@@ -82,10 +82,6 @@ export default {
     currentFile() {
       return this.$route.params.file || ''
     },
-    currentTypeText() {
-      const type = this.types.find(t => t.value === this.currentType)
-      return type ? type.text : '语言'
-    }
   },
   async asyncData({ $content, params }) {
     // 加载文章内容
@@ -106,8 +102,8 @@ export default {
       // 根据当前type加载该目录下所有markdown文件的元信息
       const files = await this.$content('language', this.currentType)
         .only(['title', 'slug'])
+        .sortBy('slug', 'asc')
         .fetch()
-      console.log(111, files)  
       this.files = files
       // 如果当前路由没有文件参数，默认跳转第一个
       if (!this.currentFile && files.length > 0) {

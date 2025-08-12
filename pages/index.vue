@@ -29,7 +29,7 @@
             <a
               v-if="category.id === 'english'"
               class="category-card"
-              href="/english"
+              href="/english/"
               title="英语学习工具 - 提高单词记忆与语法能力"
             >
               <div class="card-content">
@@ -43,7 +43,7 @@
             <a
               v-else-if="category.id === 'books'"
               class="category-card"
-              href="/books"
+              href="/books/"
               title="书籍推荐 - 提高阅读能力与知识储备"
             >
               <div class="card-content">
@@ -70,7 +70,7 @@
             </router-link>
 
             <router-link v-else-if="category.id === 'framework'"
-              :to="'/framework'"
+              :to="'/framework/'"
               class="category-card"
               title="前端框架 - 深入了解现代前端开发技术"
             >
@@ -83,7 +83,7 @@
               </div>
             </router-link>
             <router-link v-else-if="category.id === 'engineering'"
-              :to="'/engineering'"
+              :to="'/engineering/'"
               class="category-card"
               title="工程化 - 探索前端工程化的最佳实践"
             >
@@ -96,7 +96,7 @@
               </div>
             </router-link>
             <router-link v-else-if="category.id === 'mix'"
-              :to="'/mix'"
+              :to="'/mix/'"
               class="category-card"
               title="混合 - 探索前端混合开发的最佳实践"
             >
@@ -109,7 +109,7 @@
               </div>
             </router-link>  
             <router-link v-else-if="category.id === 'psychology'"
-              :to="'/psychology'"
+              :to="'/psychology/'"
               class="category-card"
               title="心理学 - 探索人类思维与行为"
             >
@@ -122,7 +122,7 @@
               </div>
             </router-link>
             <router-link v-else-if="category.id === 'tool'"
-              :to="'/tools'"
+              :to="'/tools/'"
               class="category-card"
               title="工具 - 提高工作效率与生活质量"
             >
@@ -186,7 +186,7 @@
         </div>
 
         <div class="contact-card">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-icon">😉<i class="fas fa-envelope"></i></div>
           <div class="contact-content">
             <h3 class="contact-title">联系我们</h3>
             <p class="contact-text">如需交流、建议或合作，可发送邮件至：</p>

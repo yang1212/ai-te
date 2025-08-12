@@ -1,3 +1,7 @@
+// 首先在文件顶部导入必要的模块
+import fs from 'fs';
+import path from 'path';
+
 export default {
   mode: 'universal',
   target: 'static', // 设置为静态站点
@@ -20,20 +24,41 @@ export default {
   buildModules: [],
   generate: {
     routes: async () => {
-      const fileMap = {
-        js: ['file1', 'file2', 'file3', 'file4', 'file5'],
-        es6: ['file1'],
-        ts: ['file1'],
-        handwritten: ['file1'],
-        designPatterns: ['file1', 'file2']
-      };
-
       const routes = [];
 
-      // 添加语言页面路由
-      Object.entries(fileMap).forEach(([type, files]) => {
+      // 处理 language 路由
+      const languageTypes = ['js', 'es6', 'ts', 'handwritten', 'designPatterns'];
+      languageTypes.forEach(type => {
+        const files = fs.readdirSync(path.join(__dirname, 'content', 'language', type))
+          .filter(file => file.endsWith('.md'))
+          .map(file => file.replace('.md', ''));
+
         files.forEach(file => {
           routes.push(`/language/${type}/${file}`);
+        });
+      });
+
+      // 处理 framework 路由
+      const frameworkTypes = ['react', 'rn', 'vue2', 'vue3', 'css', 'program'];
+      frameworkTypes.forEach(type => {
+        const files = fs.readdirSync(path.join(__dirname, 'content', 'framework', type))
+          .filter(file => file.endsWith('.md'))
+          .map(file => file.replace('.md', ''));
+
+        files.forEach(file => {
+          routes.push(`/framework/${type}/${file}`);
+        });
+      });
+
+      // 处理 engineering 路由
+      const engineeringTypes = ['webpack'];
+      engineeringTypes.forEach(type => {
+        const files = fs.readdirSync(path.join(__dirname, 'content', 'engineering', type))
+          .filter(file => file.endsWith('.md'))
+          .map(file => file.replace('.md', ''));
+
+        files.forEach(file => {
+          routes.push(`/engineering/${type}/${file}`);
         });
       });
 
