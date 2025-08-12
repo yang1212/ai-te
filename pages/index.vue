@@ -34,6 +34,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  🌀 
                   <i :class="category.icon || 'fas fa-book'"></i>
                 </div>
                 <h3>英语学习</h3>
@@ -47,6 +48,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  📖
                   <i :class="category.icon || 'fas fa-book'"></i>
                 </div>
                 <h3>书籍推荐</h3>
@@ -59,6 +61,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  🎒
                   <i :class="category.icon || 'fas fa-code'"
                      :aria-label="category.name + ' 图标'"></i>
                 </div>
@@ -73,6 +76,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  🎨
                   <i :class="category.icon || 'fas fa-cubes'"></i>
                 </div>
                 <h3>{{ category.name }}</h3>
@@ -85,6 +89,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  ⛳
                   <i :class="category.icon || 'fas fa-tools'"></i>
                 </div>
                 <h3>{{ category.name }}</h3>
@@ -97,6 +102,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  🎈
                   <i :class="category.icon || 'fas fa-code-branch'"></i>
                 </div>
                 <h3>{{ category.name }}</h3>
@@ -109,6 +115,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  👺
                   <i :class="category.icon || 'fas fa-brain'"></i>
                 </div>
                 <h3>{{ category.name }}</h3>
@@ -121,6 +128,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  🎯
                   <i :class="category.icon || 'fas fa-wrench'"></i>
                 </div>
                 <h3>{{ category.name }}</h3>
@@ -133,6 +141,7 @@
             >
               <div class="card-content">
                 <div class="card-icon">
+                  🏄
                   <i :class="category.icon || 'fas fa-book'"></i>
                 </div>
                 <h3>{{ category.name }}</h3>
