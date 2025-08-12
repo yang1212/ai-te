@@ -8,7 +8,7 @@
           :class="{ active: file.slug === $route.params.file }"
           @click="loadFile(file.slug)"
         >
-          {{ file.title }}
+          {{ file.slug }}
         </li>
       </ul>
     </aside>
@@ -43,7 +43,30 @@ export default {
         { value: 'handwritten', label: '手写系列', text: '手写代码' },
         { value: 'designPatterns', label: '设计模式', text: '设计模式' }
       ],
+      fileMap: {
+        js: [
+          { name: 'file1', title: '知识点归纳' },
+          { name: 'file2', title: '数组方法汇总' },
+          { name: 'file3', title: '前端正则' },
+          { name: 'file4', title: '精度丢失' },
+          { name: 'file5', title: '宏任务、微任务' }
+        ],
+        es6: [
+          { name: 'file1', title: '知识点归纳' },
+        ],
+        ts: [
+          { name: 'file1', title: '知识点归纳' },
+        ],
+        handwritten: [
+          { name: 'file1', title: '知识点归纳' },
+        ],
+        designPatterns: [
+          { name: 'file1', title: '知识点归纳' },
+          { name: 'file2', title: '常见前端设计模式' },
+        ]
+      },
       files: [],
+      article: ''
     }
   },
   computed: {
@@ -63,6 +86,9 @@ export default {
     const article = await $content('language', params.type, params.file).fetch()
     return { article }
   },
+  watch: {
+    '$route.params.type': 'loadFileList',
+  },
   methods: {
     loadFile(file) {
       this.$router.push(`/language/${this.currentType}/${file}`)
@@ -70,12 +96,25 @@ export default {
     switchType(type) {
       this.$router.push(`/language/${type}/`)
     },
+    async loadFileList() {
+      // 根据当前type加载该目录下所有markdown文件的元信息
+      const files = await this.$content('language', this.currentType)
+        .only(['title', 'slug'])
+        .fetch()
+      console.log(111, files)  
+      this.files = files
+      // 如果当前路由没有文件参数，默认跳转第一个
+      if (!this.currentFile && files.length > 0) {
+        this.loadFile(files[0].slug)
+      }
+    }
   },
   mounted() {
-    
+    this.loadFileList()
   }
 }
 </script>
+
 
 <style scoped>
 .container {
