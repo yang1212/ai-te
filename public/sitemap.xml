@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- 首页 -->
   <url>
-    <loc>https://yangfu.asia/</loc>
+    <loc>https://ai-te.pages.dev/</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -10,31 +10,31 @@
 
   <!-- 主要分类页面 - 基础路径 -->
   <url>
-    <loc>https://yangfu.asia/language</loc>
+    <loc>https://ai-te.pages.dev/language</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework</loc>
+    <loc>https://ai-te.pages.dev/framework</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/engineering</loc>
+    <loc>https://ai-te.pages.dev/engineering</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/mix</loc>
+    <loc>https://ai-te.pages.dev/mix</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/tools</loc>
+    <loc>https://ai-te.pages.dev/tools</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -42,91 +42,91 @@
 
   <!-- 语言分类 -->
   <url>
-    <loc>https://yangfu.asia/language/designPatterns</loc>
+    <loc>https://ai-te.pages.dev/language/designPatterns</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/designPatterns/file1</loc>
+    <loc>https://ai-te.pages.dev/language/designPatterns/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/designPatterns/file2</loc>
+    <loc>https://ai-te.pages.dev/language/designPatterns/file2</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/es6</loc>
+    <loc>https://ai-te.pages.dev/language/es6</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/es6/file1</loc>
+    <loc>https://ai-te.pages.dev/language/es6/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/handwritten</loc>
+    <loc>https://ai-te.pages.dev/language/handwritten</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/handwritten/file1</loc>
+    <loc>https://ai-te.pages.dev/language/handwritten/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/js</loc>
+    <loc>https://ai-te.pages.dev/language/js</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/js/file1</loc>
+    <loc>https://ai-te.pages.dev/language/js/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/js/file2</loc>
+    <loc>https://ai-te.pages.dev/language/js/file2</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/js/file3</loc>
+    <loc>https://ai-te.pages.dev/language/js/file3</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/js/file4</loc>
+    <loc>https://ai-te.pages.dev/language/js/file4</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/js/file5</loc>
+    <loc>https://ai-te.pages.dev/language/js/file5</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/ts</loc>
+    <loc>https://ai-te.pages.dev/language/ts</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/language/ts/file1</loc>
+    <loc>https://ai-te.pages.dev/language/ts/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -134,73 +134,73 @@
 
   <!-- 框架分类 -->
   <url>
-    <loc>https://yangfu.asia/framework/css</loc>
+    <loc>https://ai-te.pages.dev/framework/css</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/css/file1</loc>
+    <loc>https://ai-te.pages.dev/framework/css/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/program</loc>
+    <loc>https://ai-te.pages.dev/framework/program</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/program/file1</loc>
+    <loc>https://ai-te.pages.dev/framework/program/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/react</loc>
+    <loc>https://ai-te.pages.dev/framework/react</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/react/file1</loc>
+    <loc>https://ai-te.pages.dev/framework/react/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/rn</loc>
+    <loc>https://ai-te.pages.dev/framework/rn</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/rn/file1</loc>
+    <loc>https://ai-te.pages.dev/framework/rn/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/vue2</loc>
+    <loc>https://ai-te.pages.dev/framework/vue2</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/vue2/file1</loc>
+    <loc>https://ai-te.pages.dev/framework/vue2/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/vue3</loc>
+    <loc>https://ai-te.pages.dev/framework/vue3</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/framework/vue3/file1</loc>
+    <loc>https://ai-te.pages.dev/framework/vue3/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -208,19 +208,19 @@
 
   <!-- 工程化分类 -->
   <url>
-    <loc>https://yangfu.asia/engineering/webpack</loc>
+    <loc>https://ai-te.pages.dev/engineering/webpack</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/engineering/webpack/file1</loc>
+    <loc>https://ai-te.pages.dev/engineering/webpack/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/engineering/webpack/file2</loc>
+    <loc>https://ai-te.pages.dev/engineering/webpack/file2</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -228,37 +228,37 @@
 
   <!-- 混合分类 -->
   <url>
-    <loc>https://yangfu.asia/mix/network</loc>
+    <loc>https://ai-te.pages.dev/mix/network</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/mix/network/file1</loc>
+    <loc>https://ai-te.pages.dev/mix/network/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/mix/other</loc>
+    <loc>https://ai-te.pages.dev/mix/other</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/mix/other/file1</loc>
+    <loc>https://ai-te.pages.dev/mix/other/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/mix/seo</loc>
+    <loc>https://ai-te.pages.dev/mix/seo</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/mix/seo/file1</loc>
+    <loc>https://ai-te.pages.dev/mix/seo/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -266,13 +266,13 @@
 
   <!-- 工具分类 -->
   <url>
-    <loc>https://yangfu.asia/tools/program</loc>
+    <loc>https://ai-te.pages.dev/tools/program</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/tools/program/file1</loc>
+    <loc>https://ai-te.pages.dev/tools/program/file1</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -280,37 +280,37 @@
 
   <!-- 其他重要页面 -->
   <url>
-    <loc>https://yangfu.asia/about</loc>
+    <loc>https://ai-te.pages.dev/about</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/psychology</loc>
+    <loc>https://ai-te.pages.dev/psychology</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/english</loc>
+    <loc>https://ai-te.pages.dev/english</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/books</loc>
+    <loc>https://ai-te.pages.dev/books</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/privacy-policy</loc>
+    <loc>https://ai-te.pages.dev/privacy-policy</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://yangfu.asia/terms-of-service</loc>
+    <loc>https://ai-te.pages.dev/terms-of-service</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
