@@ -1,39 +1,45 @@
 <template>
-  <div class="container">
-    <aside class="sidebar">
-      <ul>
-        <li
-          v-for="file in files"
-          :key="file.slug"
-          :class="{ active: file.slug === $route.params.file }"
-          @click="loadFile(file.slug)"
-        >
-          {{ file.title }}
-        </li>
-      </ul>
-    </aside>
+  <div>
+    <NavBar/>
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li
+            v-for="file in files"
+            :key="file.slug"
+            :class="{ active: file.slug === $route.params.file }"
+            @click="loadFile(file.slug)"
+          >
+            {{ file.title }}
+          </li>
+        </ul>
+      </aside>
 
-    <div class="content">
-      <h1>前端｜{{ currentTypeText }}</h1>
-      <div class="top-bar">
-        <button
-          v-for="type in types"
-          :key="type.value"
-          :class="{ active: type.value === $route.params.type }"
-          @click="switchType(type.value)"
-        >
-          {{ type.label }}
-        </button>
+      <div class="content">
+        <h1>前端｜{{ currentTypeText }}</h1>
+        <div class="top-bar">
+          <button
+            v-for="type in types"
+            :key="type.value"
+            :class="{ active: type.value === $route.params.type }"
+            @click="switchType(type.value)"
+          >
+            {{ type.label }}
+          </button>
+        </div>
+
+        <!-- 用nuxt-content渲染markdown -->
+        <nuxt-content :document="article" />
       </div>
-
-      <!-- 用nuxt-content渲染markdown -->
-      <nuxt-content :document="article" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  components: {
+    NavBar: () => import('@/components/NavBar'),
+  },
   data() {
     return {
       types: [
