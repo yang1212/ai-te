@@ -1,29 +1,6 @@
-// nuxt.config.js
-module.exports = {
+export default {
   mode: 'universal',
-  generate: {
-    routes: async () => {
-      // 你可以从接口拿数据，也可以从本地json拿
-      // 这里用本地模拟的数据结构
-      const fileMap = {
-        js: ['file1', 'file2', 'file3', 'file4', 'file5'],
-        es6: ['file1'],
-        ts: ['file1'],
-        handwritten: ['file1'],
-        designPatterns: ['file1', 'file2']
-      };
-
-      const routes = [];
-
-      Object.entries(fileMap).forEach(([type, files]) => {
-        files.forEach(file => {
-          routes.push(`/language/${type}/${file}`);
-        });
-      });
-
-      return routes;
-    }
-  },
+  target: 'static', // 设置为静态站点
   head: {
     title: '个人知识库',
     meta: [
@@ -37,18 +14,42 @@ module.exports = {
   },
   loading: { color: '#fff' },
   css: [
-    '@fortawesome/fontawesome-free/css/all.css',
     '~/assets/css/global.css'
   ],
   plugins: [],
   buildModules: [],
-  modules: [
-    '@nuxtjs/axios'
-  ],
+  generate: {
+    routes: async () => {
+      const fileMap = {
+        js: ['file1', 'file2', 'file3', 'file4', 'file5'],
+        es6: ['file1'],
+        ts: ['file1'],
+        handwritten: ['file1'],
+        designPatterns: ['file1', 'file2']
+      };
+
+      const routes = [];
+
+      // 添加语言页面路由
+      Object.entries(fileMap).forEach(([type, files]) => {
+        files.forEach(file => {
+          routes.push(`/language/${type}/${file}`);
+        });
+      });
+
+      return routes;
+    },
+    exclude: [/.*\.md$/]  // 排除所有 .md 文件
+  },
   build: {
     transpile: ['marked']
   },
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxt/content'
+  ],
   axios: {
-    baseURL: process.env.BASE_URL || '/'  // 线上没配置 BASE_URL 就默认 '/'
+    // 这里配置你的 axios 选项，比如 baseURL
+    baseURL: '/',  // 你的静态资源相对路径或绝对路径
   }
 }
