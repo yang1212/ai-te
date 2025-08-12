@@ -29,7 +29,7 @@
             <a
               v-if="category.id === 'english'"
               class="category-card"
-              href="/english/"
+              href="https://tool.yangfu.asia/"
               title="英语学习工具 - 提高单词记忆与语法能力"
             >
               <div class="card-content">
@@ -43,7 +43,7 @@
             <a
               v-else-if="category.id === 'books'"
               class="category-card"
-              href="/books/"
+              href="https://books.yangfu.asia/"
               title="书籍推荐 - 提高阅读能力与知识储备"
             >
               <div class="card-content">

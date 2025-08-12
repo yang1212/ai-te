@@ -62,6 +62,39 @@ export default {
         });
       });
 
+      // 处理 mix 路由
+      const mixTypes = ['network', 'seo', 'other'];
+      mixTypes.forEach(type => {
+        const files = fs.readdirSync(path.join(__dirname, 'content', 'mix', type))
+          .filter(file => file.endsWith('.md'))
+          .map(file => file.replace('.md', ''));
+
+        files.forEach(file => {
+          routes.push(`/mix/${type}/${file}`);
+        });
+      });
+
+      // 处理 tools 路由
+      const toolsTypes = ['program'];
+      toolsTypes.forEach(type => {
+        const files = fs.readdirSync(path.join(__dirname, 'content', 'tools', type))
+          .filter(file => file.endsWith('.md'))
+          .map(file => file.replace('.md', ''));
+
+        files.forEach(file => {
+          routes.push(`/tools/${type}/${file}`);
+        });
+      });
+
+      // 处理 psychology 路由
+      const psychologyFiles = fs.readdirSync(path.join(__dirname, 'content', 'psychology'))
+        .filter(file => file.endsWith('.md'))
+        .map(file => file.replace('.md', ''));
+      
+      psychologyFiles.forEach(file => {
+        routes.push(`/psychology/default/${file}`);
+      });
+
       return routes;
     },
     exclude: [/.*\.md$/]  // 排除所有 .md 文件
