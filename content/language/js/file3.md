@@ -1,3 +1,7 @@
+---
+title: "前端正则"
+---
+
 ## 🌞 RegExp对象
 原生JavaScript中表示正则表达式的对象
 

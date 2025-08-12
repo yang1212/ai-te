@@ -8,7 +8,7 @@
           :class="{ active: file.slug === $route.params.file }"
           @click="loadFile(file.slug)"
         >
-          {{ file.slug }}
+          {{ file.title }}
         </li>
       </ul>
     </aside>

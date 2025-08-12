@@ -1,3 +1,7 @@
+---
+title: "知识点归纳"
+---
+
 ## 目录
 
 * [【 手写系列 】 算法](https://github.com/yang1212/compound_interest)

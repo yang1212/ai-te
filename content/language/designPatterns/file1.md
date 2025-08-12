@@ -1,3 +1,7 @@
+---
+title: "知识点归纳"
+---
+
 ## 目录
 
 * [【 设计模式 】 发布-订阅模式](https://github.com/yang1212/collection-about/issues/38)
