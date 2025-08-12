@@ -1,3 +1,7 @@
+---
+title: "缓存"
+---
+
 处理缓存时，查阅[RN官方文档](https://reactnative.cn/docs/asyncstorage)已标记AsyncStorage处理缓存已过时，推荐[使用npm包](https://reactnative.directory/?search=storage)。
 
 <img width="907" alt="Snipaste_2023-08-03_10-24-00" src="https://github.com/yang1212/collection-about/assets/17806205/af4d4459-f6cc-4d21-82ba-8241cd88d2db">

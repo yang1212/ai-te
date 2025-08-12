@@ -1,3 +1,7 @@
+---
+title: "vscode插件/命令行"
+---
+
 ## 插件
 
 * **Code Translate**: 滑词翻译软件

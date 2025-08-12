@@ -1,3 +1,7 @@
+---
+title: "路由导航"
+---
+
 ## [路由导航](https://zhuanlan.zhihu.com/p/553544088)
 导航方式主要是三种：堆栈导航（StackNavigator）、选项卡导航（TabNavigator）和抽屉导航（DrawerNavigator)，本文案例基于6.x。
 

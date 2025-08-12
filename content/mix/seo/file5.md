@@ -1,3 +1,7 @@
+---
+title: "什么是 canonical？"
+---
+
 ## 🧭 什么是 canonical？
 
 <link rel="canonical" href="https://example.com/page">

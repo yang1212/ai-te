@@ -1,3 +1,7 @@
+---
+title: "SEO优化"
+---
+
 ## 增加语言能力
 https://mp.weixin.qq.com/s?__biz=MjM5OTIzMzYyMA==&mid=2650080629&idx=1&sn=7cb843cbd5e1c673d1e10583465b1edd&chksm=bf3f344e8848bd58e467bd56210a13e0024218491b654b92d556dce2956ce8181d2efa77da4b&scene=21#wechat_redirect
 

@@ -1,3 +1,7 @@
+---
+title: "android应用签名、打包发布google play "
+---
+
 [RN官方网站](https://reactnative.cn/docs/signed-apk-android)安卓打包基于命令行生成签名密钥，打包等过程不仅经常报乱七八糟的错误，而且打包时间非常非常长，实践证明，最优方案得选android studio。（下面的操作大多是参考android开发者官网）
 
 ## [Android 开发者官网](https://developer.android.com/studio/publish/app-signing?hl=zh-cn)

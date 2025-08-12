@@ -1,3 +1,7 @@
+---
+title: "Mac配置"
+---
+
 ## [IOS环境](https://reactnative.cn/docs/environment-setup)
 **1、brew install watchman**
 * 出现某个包下载出错：[升级](https://blog.devhitao.com/2020/01/18/homebrew-usage/)brew到4.x可解决

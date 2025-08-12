@@ -1,3 +1,7 @@
+---
+title: "常用Hooks"
+---
+
 ## React Hooks
 v16.8新增功能, 让你在不编写Class的情况下，使用state等React特性,作为辅助Function Component的工具。
 

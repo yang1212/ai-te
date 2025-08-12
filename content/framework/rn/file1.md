@@ -1,3 +1,7 @@
+---
+title: "知识点归纳"
+---
+
 ## [官方文档](https://reactnative.cn/docs/environment-setup)
 * [【 指南 】windows搭建安卓开发环境](https://juejin.cn/post/7041840421806932005)
 * [【 指南 】Mac搭建开发环境](https://github.com/yang1212/collection-about/issues/51)

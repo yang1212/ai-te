@@ -1,3 +1,7 @@
+---
+title: "对接海外Stripe支付"
+---
+
 ## [设置RN未来付款](https://stripe.com/docs/payments/save-and-reuse?platform=react-native&ui=payment-sheet#react-native-card-scanning)
 
 **1、依赖安装**
