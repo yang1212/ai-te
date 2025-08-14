@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# 网站地图位置
-Sitemap: https://yangfu.asia/sitemap.xml
