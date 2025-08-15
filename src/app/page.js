@@ -12,7 +12,7 @@ export default function LandingPage() {
               <span className="text-xl font-bold text-blue-600">Next.js + Tailwind</span>
             </div>
             <div className="flex items-center space-x-4">
-              <Link href="#features" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/features" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                 功能
               </Link>
               <Link href="#pricing" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
