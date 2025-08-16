@@ -15,6 +15,9 @@ export default function LandingPage() {
               <Link href="/features" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                 功能
               </Link>
+              <Link href="/ai" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                AI图像生成
+              </Link>
               <Link href="#pricing" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                 价格
               </Link>
