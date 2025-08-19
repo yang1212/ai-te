@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+// 仅开发环境临时关闭SSL验证（生产环境删除！）
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 export async function POST(request) {
   try {
     const { prompt,size, n } = await request.json();
