@@ -14,6 +14,7 @@ export async function POST(request) {
 
     // 官网示例的正确URL
     const url = 'https://open.bigmodel.cn/api/paas/v4/chat/completions';
+    console.log(11, apiKey)
     
     const response = await fetch(url, {
       method: 'POST',

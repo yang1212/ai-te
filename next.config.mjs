@@ -17,6 +17,12 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'i.imgur.com', // Craiyon可能使用的图片存储域名
       },
+      {
+        protocol: 'https',
+        hostname: 'aigc-files.bigmodel.cn',
+        port: '',
+        pathname: '/**', // 允许该域名下所有路径
+      },
     ],
   },
 };
