@@ -41,30 +41,6 @@ export default function FeaturesPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 text-slate-800">
-      {/* 导航栏 */}
-      <nav className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <span className="text-xl font-bold text-blue-600">Next.js + Tailwind</span>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Link href="/" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                首页
-              </Link>
-              <Link href="/features" className="bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
-                功能
-              </Link>
-              <Link href="#pricing" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                价格
-              </Link>
-              <Link href="#contact" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                联系我们
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* 页面标题 */}
       <section className="py-12 bg-white">

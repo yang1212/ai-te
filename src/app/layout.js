@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from 'next/link'; // 添加Link导入
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +23,31 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* 添加全局导航栏 */}
+        <nav className="bg-white shadow-sm sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between h-16">
+              <div className="flex items-center">
+                <Link href="/" className="text-xl font-bold text-blue-600">首页</Link>
+              </div>
+              <div className="flex items-center space-x-4">
+                <Link href="/features" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  功能
+                </Link>
+                <Link href="/ai" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  AI对话聊天
+                </Link>
+                <Link href="/aiPicture" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  AI图像生成
+                </Link>
+                <Link href="#contact" className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+                  联系我们
+                </Link>
+              </div>
+            </div>
+          </div>
+        </nav>
+
         {children}
       </body>
     </html>
