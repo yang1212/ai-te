@@ -15,7 +15,6 @@ export async function POST(request) {
     // 调用 BigModel 图像生成接口
     // 官网示例的正确URL
     const url = 'https://open.bigmodel.cn/api/paas/v4/images/generations';
-    console.log(22, apiKey)
     
     const response = await fetch(url, {
       method: 'POST',
