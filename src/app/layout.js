@@ -38,7 +38,10 @@ export default function RootLayout({ children }) {
                   智谱-图像生成
                 </Link>
                 <Link href="/aihubmix" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                  国内聚合型-AIHubMix
+                  AIHubMix-对话
+                </Link>
+                <Link href="/aihubmix-image" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  AIHubMix-图像生成
                 </Link>
               </div>
             </div>
