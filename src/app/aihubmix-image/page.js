@@ -14,17 +14,21 @@ const AIHubMixImage = () => {
 
   // 支持的模型列表
   const models = [
-    { value: 'opanai/gpt-image-1', label: 'OpenAI GPT Image 1' },
+    // { value: 'opanai/gpt-image-1', label: 'OpenAI GPT Image 1' },
     { value: 'opanai/dall-e-3', label: 'OpenAI DALL·E 3' },
-    { value: 'imagen-4.0-ultra-generate-001', label: 'Imagen 4.0 Ultra' },
-    { value: 'imagen-4.0-generate-001', label: 'Imagen 4.0' },
-    { value: 'imagen-4.0-fast-generate-001', label: 'Imagen 4.0 Fast' },
-    { value: 'imagen-4.0-fast-generate-preview-06-06', label: 'Imagen 4.0 Fast Preview' },
-    { value: 'imagen-3.0-generate-002', label: 'Imagen 3.0' },
-    { value: 'flux-kontext-max', label: 'Flux Kontext Max' },
-    { value: 'flux-kontext-pro', label: 'Flux Kontext Pro' },
+    // { value: 'google/gemini-2.5-flash-image-preview', label: 'Google Gemini 2.5 Flash Image Preview' },
+    // { value: 'google/gemini-2.0-flash-preview-image', label: 'Google Gemini 2.0 Flash Preview Image' },
+    // { value: 'google/imagen-4.0-ultra-generate-001', label: 'Google Imagen 4.0 Ultra' },
+    // { value: 'google/imagen-4.0-ultra-generate-preview-001', label: 'Google Imagen 4.0 Ultra Preview' },
+    // { value: 'google/imagen-4.0-generate-001', label: 'Google Imagen 4.0' },
+    // { value: 'google/imagen-4.0-fast-generate-001', label: 'Google Imagen 4.0 Fast' },
+    // { value: 'google/imagen-4.0-fast-generate-preview-06-06', label: 'Google Imagen 4.0 Fast Preview' },
+    // { value: 'google/imagen-3.0-generate-002', label: 'Google Imagen 3.0' },
+    // { value: 'bfl/flux-kontext-pro', label: 'Flux Kontext Pro' },
+    // { value: 'bfl/flux-1.1-pro', label: 'Flux 1.1 Pro' },
   ];
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);

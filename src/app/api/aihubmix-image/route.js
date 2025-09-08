@@ -15,8 +15,8 @@ export async function POST(req) {
       });
     }
 
-    // 构建API URL，添加/generate操作路径
-    const url = 'https://aihubmix.com/v1/models/openai/dall-e-3/predictions';
+    // 构建API URL，使用动态模型路径
+    const url = `https://aihubmix.com/v1/models/${model_path}/predictions`;
     // 调用AIHubMix API
     const response = await fetch(url, {
       method: 'POST',
