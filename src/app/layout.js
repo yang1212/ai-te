@@ -43,6 +43,9 @@ export default function RootLayout({ children }) {
                 <Link href="/aihubmix-image" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   AIHubMix-图像生成
                 </Link>
+                <Link href="/r2-upload" className="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  R2 图片上传
+                </Link>
               </div>
             </div>
           </div>
@@ -53,3 +56,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
