@@ -6,10 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:update": "npm run db:push ; npm run db:gen-types"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.896.0",
+    "@supabase/supabase-js": "^2.58.0",
     "framer-motion": "^12.23.12",
     "next": "15.4.6",
     "react": "19.1.0",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/react": "19.1.14",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
     "tailwindcss": "^4"
