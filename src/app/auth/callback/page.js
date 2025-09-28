@@ -19,5 +19,5 @@ export default function AuthCallbackPage() {
     getSession()
   }, [router])
 
-  return <p>Finishing login...</p>
+  return <p>...</p>
 }
