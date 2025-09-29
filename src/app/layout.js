@@ -76,6 +76,9 @@ export default function RootLayout({ children }) {
                 <Link href="/aihubmix" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">AIHubMix-对话</Link>
                 <Link href="/aihubmix-image" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">AIHubMix-图像生成</Link>
                 <Link href="/r2-upload" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">R2 图片上传</Link>
+                <Link href="/data-management" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  数据管理
+                </Link>
                 
                 {/* 用户认证相关按钮 */}
                 {user ? (
