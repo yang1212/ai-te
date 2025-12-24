@@ -298,10 +298,10 @@ export default function DataManagementPage() {
         >
           <h3 className="text-lg font-semibold mb-2">使用说明</h3>
           <ul className="list-disc list-inside space-y-1 text-sm">
-            <li>请先在Supabase中创建名为"data_items"的表，包含id、name、size和date字段</li>
+            <li>请先在Supabase中创建名为&quot;data_items&quot;的表，包含id、name、size和date字段</li>
             <li>id字段应为主键，类型为uuid，可设置为默认值gen_random_uuid()</li>
             <li>name、size字段为text类型，date字段为date类型</li>
-            <li>在左侧表单中输入数据，点击"添加数据"按钮保存</li>
+            <li>在左侧表单中输入数据，点击&quot;添加数据&quot;按钮保存</li>
             <li>在右侧表格中可以查看和删除现有数据</li>
           </ul>
         </motion.div>

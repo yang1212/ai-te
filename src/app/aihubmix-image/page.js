@@ -155,10 +155,12 @@ const AIHubMixImage = () => {
         >
           {images.map((image, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img
+              <Image
                 src={image.url}
                 alt={`生成的图像 ${index + 1}`}
                 className="w-full h-64 object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           ))}
