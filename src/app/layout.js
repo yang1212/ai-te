@@ -82,17 +82,17 @@ export default function RootLayout({ children }) {
                 
                 {/* 用户认证相关按钮 */}
                 {user ? (
-                  <>
-                    <div className="text-gray-700 px-3 py-2 text-sm font-medium">
+                  <div className="relative group">
+                    <div className="text-gray-700 px-3 py-2 text-sm font-medium cursor-pointer">
                       {user.email}
                     </div>
                     <button
                       onClick={handleSignOut}
-                      className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                      className="absolute right-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium whitespace-nowrap"
                     >
                       退出登录
                     </button>
-                  </>
+                  </div>
                 ) : (
                   <Link href="/supabase-auth" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                     登录
