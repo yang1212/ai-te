@@ -23,6 +23,11 @@ const nextConfig = {
         port: '',
         pathname: '/**', // 允许该域名下所有路径
       },
+      {
+        protocol: 'https',
+        hostname: 'oaidalleapiprodscus.blob.core.windows.net',
+        pathname: '/**', // 允许该域名下所有路径（可选，但建议加上）
+      }
     ],
   },
 };

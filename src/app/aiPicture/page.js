@@ -91,11 +91,7 @@ export default function AIImageGeneratorPage() {
         </div>
       );
     } else {
-      return (
-        <div className="text-center py-12 text-slate-400">
-          <p>请输入描述词并点击生成按钮</p>
-        </div>
-      );
+      return 
     }
   };
 
@@ -105,9 +101,6 @@ export default function AIImageGeneratorPage() {
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           AI图像生成
         </h1>
-        <p className="text-center text-slate-300 max-w-2xl mx-auto">
-          输入描述词，让AI为您创建精美的图像。尝试使用详细的描述以获得更好的结果。
-        </p>
       </header>
 
       <main className="max-w-4xl mx-auto">

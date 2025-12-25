@@ -27,7 +27,14 @@ const AIHubMixImage = () => {
     // { value: 'bfl/flux-kontext-pro', label: 'Flux Kontext Pro' },
     // { value: 'bfl/flux-1.1-pro', label: 'Flux 1.1 Pro' },
   ];
-
+  // 内联 SVG 图标
+  const BrainIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+      <rect x="2" y="9" width="4" height="12"/>
+      <circle cx="4" cy="4" r="2"/>
+    </svg>
+  );
   
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -69,7 +76,17 @@ const AIHubMixImage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">AIHubMix 图像生成</h1>
+      <div className="text-center mb-10">
+        <motion.div 
+          className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 mb-4"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <BrainIcon />
+        </motion.div>
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">AIHubMix 图像生成</h1>
+        <p className="text-slate-600 dark:text-slate-300">输入提示词，选择模型，获取AI生成的图像</p>
+      </div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
