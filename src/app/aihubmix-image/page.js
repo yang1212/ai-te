@@ -11,6 +11,7 @@ const AIHubMixImage = () => {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [selectedImage, setSelectedImage] = useState(null); // 用于模态框显示选中的图像
 
   // 支持的模型列表
   const models = [
@@ -73,6 +74,33 @@ const AIHubMixImage = () => {
       setLoading(false);
     }
   };
+
+  // 打开模态框显示大图
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  // 关闭模态框
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
+  // 点击模态框外部关闭
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (event.target.className === 'fixed inset-0 bg-black/80 z-50 flex items-center justify-center') {
+        closeModal();
+      }
+    };
+
+    if (selectedImage) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [selectedImage]);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -156,7 +184,7 @@ const AIHubMixImage = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? '生成中...' : '生成图像'}
           </button>
@@ -168,19 +196,66 @@ const AIHubMixImage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+          className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4"
         >
           {images.map((image, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <motion.div 
+              key={index} 
+              className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer relative h-40"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => openModal(image)}
+            >
+              <div className="absolute inset-0 flex items-center justify-center p-2">
+                <Image
+                  src={image.url}
+                  alt={`生成的图像 ${index + 1}`}
+                  className="w-full h-full object-cover rounded"
+                  width={200}
+                  height={200}
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw, 16.67vw"
+                />
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-xs p-1 text-center">
+                点击查看大图
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
+
+      {/* 图像模态框 */}
+      {selectedImage && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
+          onClick={closeModal}
+        >
+          <motion.div
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0.8 }}
+            className="relative max-w-4xl max-h-[90vh] p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 text-2xl"
+              onClick={closeModal}
+            >
+              ×
+            </button>
+            <div className="bg-white p-2 rounded-lg shadow-2xl">
               <Image
-                src={image.url}
-                alt={`生成的图像 ${index + 1}`}
-                className="w-full h-64 object-cover"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                src={selectedImage.url}
+                alt="大图预览"
+                className="max-w-full max-h-[80vh] object-contain"
+                width={1024}
+                height={1024}
               />
             </div>
-          ))}
+          </motion.div>
         </motion.div>
       )}
     </div>

@@ -108,7 +108,7 @@ export default function AITextGenerator() {
               whileFocus={{ borderColor: '#3b82f6' }}
             />
             
-            <div className="flex justify-between items-center mt-4">
+            <div className="w-full flex justify-between items-center mt-4">
               <motion.button
                 onClick={handleGenerate}
                 disabled={loading}
@@ -122,7 +122,7 @@ export default function AITextGenerator() {
               >
                 {loading ? (
                   <>
-                    <div className="mr-2 h-5 w-5 border-2 border-current border-t-transparent rounded-full animate-spin"></div>
+                    <div className="mr-2 h-5 w-full border-2 border-current border-t-transparent rounded-full animate-spin"></div>
                     生成中...
                   </>
                 ) : (
@@ -132,10 +132,6 @@ export default function AITextGenerator() {
                   </>
                 )}
               </motion.button>
-              
-              <span className="text-xs text-slate-500 dark:text-slate-400">
-                按 Enter 键生成，Shift+Enter 换行
-              </span>
             </div>
           </div>
 
