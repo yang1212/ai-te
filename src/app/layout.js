@@ -70,7 +70,6 @@ export default function RootLayout({ children }) {
                 <Link href="/" className="text-xl font-bold text-blue-600">首页</Link>
               </div>
               <div className="flex items-center space-x-4">
-                <Link href="/" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">首页</Link>
                 {/* <Link href="/ai" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">智谱-对话</Link>
                 <Link href="/aiPicture" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">智谱-图像生成</Link> */}
                 <Link href="/aihubmix" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">AIHubMix-对话</Link>
