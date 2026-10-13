@@ -16,7 +16,7 @@ export default function AuthCallbackPage() {
     const goLogin = () => {
       if (redirected) return
       redirected = true
-      router.replace('/supabase-auth')
+      router.replace('/?login=1')
     }
 
     const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {

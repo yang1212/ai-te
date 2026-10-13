@@ -2,6 +2,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { useState, useEffect } from 'react';
 import { supabase } from '../../util/supabaseClient';
+import LoginModal from '../components/LoginModal';
+import UserMenu from '../components/UserMenu';
 import './globals.css';
 import Link from 'next/link';
 
@@ -18,6 +20,7 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
   // 检查用户会话
   useEffect(() => {
@@ -38,9 +41,18 @@ export default function RootLayout({ children }) {
     // 设置用户状态变更监听器
     const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user || null);
+      if (session) setShowLoginModal(false);
     });
 
     return () => authListener.subscription.unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('login') === '1') {
+      setShowLoginModal(true);
+      window.history.replaceState({}, '', window.location.pathname);
+    }
   }, []);
 
   // 退出登录处理
@@ -81,21 +93,15 @@ export default function RootLayout({ children }) {
                 
                 {/* 用户认证相关按钮 */}
                 {user ? (
-                  <div className="relative group">
-                    <div className="text-gray-700 px-3 py-2 text-sm font-medium cursor-pointer">
-                      {user.email}
-                    </div>
-                    <button
-                      onClick={handleSignOut}
-                      className="absolute right-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium whitespace-nowrap"
-                    >
-                      退出登录
-                    </button>
-                  </div>
+                  <UserMenu user={user} onSignOut={handleSignOut} />
                 ) : (
-                  <Link href="/supabase-auth" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  <button
+                    type="button"
+                    onClick={() => setShowLoginModal(true)}
+                    className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                  >
                     登录
-                  </Link>
+                  </button>
                 )}
               </div>
             </div>
@@ -103,6 +109,8 @@ export default function RootLayout({ children }) {
         </nav>
 
         {children}
+
+        <LoginModal open={showLoginModal} onClose={() => setShowLoginModal(false)} />
       </body>
     </html>
   );
